@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fundo"
+    >
+
+    <!-- Título da Activity (exibe a pontuação do jogador atual) -->
+    <TextView
+        android:id="@+id/textViewRanking"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ranking"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp" />
+
+    <!-- RecyclerView para mostrar a lista de jogadores e suas pontuações -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRanking"
+        android:layout_margin="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1" /> <!-- A RecyclerView vai ocupar o espaço restante -->
+
+    <!-- Botão de Voltar -->
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="180sp"
+        android:layout_height="80sp"
+        android:text="Voltar"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/botao_borda_voltar"
+        android:textColor="#ba0072"
+        app:backgroundTint="@null"/>
+
+    <!-- Botão de Compartilhar -->
+    <Button
+        android:id="@+id/buttonCompartilhar"
+        android:layout_width="180sp"
+        android:layout_height="80sp"
+        android:text="Compartilhar"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/botao_borda"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"/>
+
+</LinearLayout>

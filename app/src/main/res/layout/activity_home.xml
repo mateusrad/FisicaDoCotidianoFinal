@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home"
+android:background="@drawable/fundo"
+
+    >
+
+
+    <TextView
+        android:id="@+id/titulo_home"
+        android:textStyle="bold"
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bem vindo a Física do Cotidiano!"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/subtitulo_home"
+        android:layout_below="@id/titulo_home"
+        android:layout_marginTop="70sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Prepare-se para uma jornada de conhecimento e diversão!"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/nome_home"
+      android:layout_centerVertical="true"
+        android:layout_marginTop="120sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Insira seu nome:" />
+
+    <EditText
+        android:layout_below="@id/nome_home"
+        android:id="@+id/login_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Nome"/>
+    <Button
+        android:id="@+id/button_home_comecar"
+        android:layout_marginTop="92sp"
+        android:layout_width="180sp"
+        android:layout_height="80sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="Começar!"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/botao_borda"
+        app:backgroundTint="@null"
+        android:textColor="#ffffff"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Escolha"
+    android:orientation="vertical"
+    android:background="@drawable/fundo"
+
+    >
+
+    <TextView
+        android:id="@+id/bemvindo_escolha"
+        android:textStyle="bold"
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bem-Vindo"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/opcao_escolha"
+        android:layout_marginTop="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/bemvindo_escolha"
+        android:text="Escolha uma opção:"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/button_assuntos"
+        android:layout_below="@id/opcao_escolha"
+        android:layout_marginTop="47sp"
+        android:layout_width="180sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="80sp"
+        android:text="Assuntos"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/botao_borda"
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/button_quiz"
+        android:layout_below="@id/button_assuntos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47sp"
+        android:layout_width="180sp"
+        android:layout_height="80sp"
+        android:text="Quiz"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/botao_borda"
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/button_ranking"
+        android:layout_below="@+id/button_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47sp"
+        android:layout_width="180sp"
+        android:layout_height="80sp"
+        android:text="Ranking"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/botao_borda"
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:id="@+id/button_voltar"
+        android:layout_marginTop="46sp"
+        android:layout_width="180sp"
+        android:layout_height="80sp"
+        android:text="Voltar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/botao_borda_voltar"
+        app:backgroundTint="@null"
+        android:textColor="#ba0072"
+        />
+
+</RelativeLayout>
